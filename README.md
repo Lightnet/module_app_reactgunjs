@@ -10,6 +10,7 @@
 # Example build:
  * https://glitch.com/edit/#!/project-react-gundb 
  * https://project-react-gundb.glitch.me/
+ * https://github.com/Lightnet/project-react-gundb
 
 # NPM Packages:
  * Babel 6.26.0
