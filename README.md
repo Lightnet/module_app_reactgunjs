@@ -7,6 +7,10 @@
 # Information:
  Simple react.js with gun.js database setup. Project test example.
 
+# Example build:
+ * https://glitch.com/edit/#!/project-react-gundb 
+ * https://project-react-gundb.glitch.me/
+
 # NPM Packages:
  * Babel 6.26.0
  * React 16.3.2
