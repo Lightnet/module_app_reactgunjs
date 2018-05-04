@@ -1,0 +1,72 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "project-react-gundb",
+  "version": "0.0.1",
+  "description": "A simple Node app with gundb as a database management system, instantly up and running.",
+  "main": "server.js",
+  "scripts": {
+    "start": "webpack && babel-node main.js --presets env --host 0.0.0.0",
+    "watch": "webpack --watch"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "browser-sync": "^2.24.4",
+    "css-loader": "^0.28.11",
+    "dotenv": "^5.0.1",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "file-loader": "^1.1.11",
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.31",
+    "gun": "^0.9.994",
+    "gun-mongo": "^0.1.2",
+    "helmet": "^3.12.0",
+    "node-sass": "^4.9.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "sass-loader": "^7.0.1",
+    "webpack": "^4.7.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-sqlite"
+  },
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        "react"
+      ]
+    ],
+    "plugins": [
+      [
+        "module-resolver",
+        {
+          "root": [
+            "./src"
+          ],
+          "alias": {}
+        }
+      ]
+    ]
+  },
+  "keywords": [
+    "node",
+    "glitch",
+    "express",
+    "gundb"
+  ]
+}
