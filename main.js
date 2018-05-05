@@ -74,7 +74,7 @@ function gunput(request){
   console.log('gunput');
   return this.to.next(request);
 }
-
+//this will listen to get and put function calls to see if data is update here.
 Gun.on('opt', function(db){
   //if(!at.token){ // only add SEA once per instance, on the "at" context.
   db.on('get', gunget); // now listen to all input data, acting as a firewall.
@@ -83,6 +83,8 @@ Gun.on('opt', function(db){
   this.to.next(db); // make sure to call the "next" middleware adapter.
 });
 
+//boolean for database for mongodb
+//current disable for simple testing.
 var bdatabase = false;
 
 var gunconfig = {
@@ -92,7 +94,6 @@ var gunconfig = {
 if(bdatabase){
   gunconfig.localStorage = false;
   gunconfig.radisk = false; //that will trigger the next default to run: RAD (Radix Storage Engine)
-
   gunconfig.mongo = {
     host: 'localhost',
     port: '27017',
@@ -101,10 +102,11 @@ if(bdatabase){
     query: ''
   }
 }
-
 //var gun = Gun({
   //web:listener, //server express
 //});
-
+//create gun database
 var gun = Gun(gunconfig);
+//init database save
 gun.get('data').once(function(){});
+//note data.json is default file

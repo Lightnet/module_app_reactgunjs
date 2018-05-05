@@ -7,6 +7,11 @@
 # Information:
  Simple react.js with gun.js database setup. Project test example.
 
+# React Examples / Docs:
+ * https://reactjs.org/docs/rendering-elements.html
+ * https://reactjs.org/docs/hello-world.html
+ * 
+
 # Example build:
  * https://glitch.com/edit/#!/project-react-gundb 
  * https://project-react-gundb.glitch.me/
