@@ -19,12 +19,12 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "browser-sync": "^2.24.4",
-    "css-loader": "^0.28.11",
+    "css-loader": "^3.1.0",
     "dotenv": "^5.0.1",
     "ejs": "^2.5.9",
     "express": "^4.16.3",
     "file-loader": "^1.1.11",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-live-server": "0.0.31",
     "gun": "^0.9.994",
     "gun-mongo": "^0.1.2",
@@ -34,7 +34,7 @@
     "react-dom": "^16.3.2",
     "sass-loader": "^7.0.1",
     "webpack": "^4.7.0",
-    "webpack-cli": "^2.1.2",
+    "webpack-cli": "^3.3.6",
     "webpack-node-externals": "^1.7.2"
   },
   "engines": {
