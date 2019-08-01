@@ -1,0 +1,1 @@
+//https://stackoverflow.com/questions/47887447/how-can-i-detect-when-a-variable-changes-value-in-javascript

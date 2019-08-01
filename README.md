@@ -1,33 +1,18 @@
-#project-react-gundb
+# jsreactgun
 
- Created by: Lightnet
-
-# License: MIT
+# Nodejs Packages:
+ * @babel/preset-env 7.5.5
+ * gulp 4.0.2
+ * react 16.8.6
+ * polka 0.5.2
+ * gun 0.2019.726
+ * webpack 4.38.0
+ * esm 3.2.25
 
 # Information:
- Simple react.js with gun.js database setup. Project test example.
+ This is work in progress. It is to keep thing simple as possible for how Gun.js and Sea.js work in peer to peer and access for users.
 
-# React Examples / Docs:
- * https://reactjs.org/docs/rendering-elements.html
- * https://reactjs.org/docs/hello-world.html
- * 
+ It has been rework from other project like those framework to simple builds.
 
-# Example build:
- * https://glitch.com/edit/#!/project-react-gundb 
- * https://project-react-gundb.glitch.me/
- * https://github.com/Lightnet/project-react-gundb
-
-# NPM Packages:
- * Babel 6.26.0
- * React 16.3.2
- * Gun 0.9.994
- * Webpack 4.7.0
-
-# Notes:
- * This project used gulp and webpack to auto build files.
-
-# Links:
- * https://reactjs.org/docs/hello-world.html
- * https://github.com/amark/gun
- * https://nodejs.org/en/
- * https://babeljs.io/
+https://stackoverflow.com/questions/15126050/running-python-on-windows-for-node-js-dependencies
+set PYTHON=%PYTHON%;D:\Python

@@ -1,70 +1,51 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "project-react-gundb",
-  "version": "0.0.1",
-  "description": "A simple Node app with gundb as a database management system, instantly up and running.",
-  "main": "server.js",
+  "name": "jsreactgun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "webpack && babel-node main.js --presets env --host 0.0.0.0",
-    "watch": "webpack --watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-module-resolver": "^3.1.1",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "browser-sync": "^2.24.4",
-    "css-loader": "^3.1.0",
-    "dotenv": "^5.0.1",
-    "ejs": "^2.5.9",
-    "express": "^4.16.3",
-    "file-loader": "^1.1.11",
+    "@babel/polyfill": "^7.4.4",
+    "browser-sync": "^2.26.7",
+    "compression": "^1.7.4",
+    "del": "^5.0.0",
+    "esm": "^3.2.25",
     "gulp": "^4.0.2",
-    "gulp-live-server": "0.0.31",
-    "gun": "^0.2019.726",
-    "helmet": "^3.12.0",
-    "node-sass": "^4.9.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "sass-loader": "^7.0.1",
-    "webpack": "^4.7.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-better-rollup": "^4.0.1",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-rename": "^1.4.0",
+    "gun": "^0.2019.627",
+    "node-sass": "^4.12.0",
+    "node-webcrypto-ossl": "^1.0.48",
+    "polka": "^0.5.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rollup": "^1.17.0",
+    "sass-loader": "^7.1.0",
+    "sirv": "^0.4.2",
+    "webpack-node-externals": "^1.7.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-scss": "^1.0.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.38.0",
     "webpack-cli": "^3.3.6",
-    "webpack-node-externals": "^1.7.2"
-  },
-  "engines": {
-    "node": "8.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-sqlite"
-  },
-  "license": "MIT",
-  "babel": {
-    "presets": [
-      [
-        "env",
-        "react"
-      ]
-    ],
-    "plugins": [
-      [
-        "module-resolver",
-        {
-          "root": [
-            "./src"
-          ],
-          "alias": {}
-        }
-      ]
-    ]
-  },
-  "keywords": [
-    "node",
-    "glitch",
-    "express",
-    "gundb"
-  ]
+    "webpack-dev-server": "^3.7.2"
+  }
 }

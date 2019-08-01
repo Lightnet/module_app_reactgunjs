@@ -1,36 +1,43 @@
-const path = require('path');
-const fs = require('fs');
+
+//var nodeExternals = require('webpack-node-externals');
+//const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
+    //target: 'node',
+    target: 'web',
     mode:'development',
-    entry:  ['react','babel-polyfill','./src/client/clientEntryPoint.js'],
+    entry: './src/client/index.js',
     output: {
-        path: path.join(__dirname, 'public'),
-        filename: 'bundle.js'
-    },
-    //watch: true,
-    module: {
-      rules: [
-            { test: /\.css$/, loader: 'style!css' },
-            {
-                test: /\.scss$/,
-                loaders: ['style-loader', 'raw-loader', 'sass-loader']
+        path: __dirname + '/public',    
+        publicPath: '/',    
+        filename: 'bundle.js'  
+    },  
+    devServer: {    
+        contentBase: './public',
+    },  
+    module: {    
+        rules: [    
+            {      
+                test: /\.(js|jsx)$/,      
+                exclude: /node_modules/,      
+                use: ['babel-loader']    
             },
             {
-                test: /\.js$/,
-                include: [
-                    path.resolve(__dirname, 'src')
-                ],
-                loader: 'babel-loader',
-                query: {
-                    presets: ['babel-preset-env','react']
-                }
-            }
-      ]
+                test: /\.scss$/,
+                use: [
+                    "style-loader", // creates style nodes from JS strings
+                    "css-loader", // translates CSS into CommonJS
+                    "sass-loader" // compiles Sass to CSS, using Node Sass by default
+                ]
+            } 
+        ]  
     },
-    resolve: {
-        alias: { 
-            
-        }
+    externals:[
+        //nodeExternals({
+            //whitelist:['gun/gun','gun/sea']
+        //})
+    ],
+    optimization: {
+        //minimizer: [new UglifyJsPlugin()],
     }
 };
