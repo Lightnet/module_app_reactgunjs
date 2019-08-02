@@ -6,7 +6,8 @@
  * react 16.8.6
  * polka 0.5.2
  * gun 0.2019.726
- * webpack 4.38.0
+ * webpack 4.38.0 (testing)
+ * rollup 1.17.0 (testing)
  * esm 3.2.25
 
 # Information:
@@ -14,5 +15,8 @@
 
  It has been rework from other project like those framework to simple builds.
 
-https://stackoverflow.com/questions/15126050/running-python-on-windows-for-node-js-dependencies
-set PYTHON=%PYTHON%;D:\Python
+# github( project ): 
+ * https://github.com/Lightnet/module_app_reactgunjs
+
+# glitch (test site):
+ * https://glitch.com/edit/#!/lightnet-module-app-reactgunjs

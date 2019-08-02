@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development"
+    "start": "gulp default",
+    "webpack": "webpack-dev-server --mode development"
   },
   "author": "",
   "license": "ISC",

@@ -8,12 +8,12 @@ const del           = require('del');
 const rename        = require('gulp-rename');
 const nodemon       = require('gulp-nodemon');
 const browserSync   = require('browser-sync').create();
-//const webpack       = require('webpack-stream');
-//const babel         = require('gulp-babel');
+const webpack       = require('webpack-stream');
+const babel         = require('gulp-babel');
 const rollup        = require('gulp-better-rollup');
 const resolve       = require('rollup-plugin-node-resolve');
 const commonjs      = require('rollup-plugin-commonjs');
-const babel         = require('rollup-plugin-babel');
+//const babel         = require('rollup-plugin-babel');
 const replace       = require('rollup-plugin-replace');
 const scss          = require('rollup-plugin-scss');
 
@@ -24,7 +24,7 @@ const scss          = require('rollup-plugin-scss');
 */
 //https://stackoverflow.com/questions/51291553/how-to-bundle-react-app-with-rollup
 //https://github.com/rollup/rollup/issues/487
-//var frontend_config = require('./webpack.config.js');
+var frontend_config = require('./webpack.config.js');
 var frontrollupconfig = {
     //input: 'src/main.js',
     external: [
@@ -65,8 +65,8 @@ var frontrollupconfig = {
 
 function frontend_build(done){
     return gulp.src('./src/client/index.js')
-        .pipe(rollup(frontrollupconfig, 'umd'))
-        //.pipe(webpack(frontend_config))
+        //.pipe(rollup(frontrollupconfig, 'umd'))
+        .pipe(webpack(frontend_config))
         /*
         .pipe(babel({
             // transpile ES6 to ES5

@@ -23,13 +23,16 @@ export default class ModalComponent extends Component {
         if (!this.props.show) {
             return null;
         }
+        //const showHideClassName = "modalbg";
 
         return (
-            <div className="modal" id="modal">
-                <h2>Modal Window</h2>
-                <div className="content">{this.props.children}</div>
-                <div className="actions">
-                    <button className="toggle-button" onClick={this.onClose}> Close </button>
+            <div className="modalbg">
+                <div className="modal" id="modal">
+                    <h2>Modal Window</h2>
+                    <div className="content">{this.props.children}</div>
+                    <div className="actions">
+                        <button className="toggle-button" onClick={this.onClose}> Close </button>
+                    </div>
                 </div>
             </div>
         );
